@@ -76,7 +76,7 @@ export const StyledLogo = styled.img`
 
 export const StyledImg = styled.img`
   box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
-  border: 4px dashed var(--secondary);
+  border: 4px solid var(--secondary);
   background-color: var(--accent);
   border-radius: 100%;
   width: 200px;
@@ -216,10 +216,10 @@ function App() {
             ai={"center"}
             style={{
               backgroundColor: "var(--accent)",
-              padding: 24,
-              borderRadius: 24,
-              border: "4px dashed var(--secondary)",
-              boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
+              padding: 10,
+              borderRadius: 0,
+              border: "4px solid var(--secondary)",
+              boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.0)",
             }}
           >
             <s.TextTitle
@@ -249,13 +249,13 @@ function App() {
             >
               <StyledButton
                 onClick={(e) => {
-                  window.open("/config/roadmap.pdf", "_blank");
+                  window.open("https://t.me/metisninjas");
                 }}
                 style={{
                   margin: "5px",
                 }}
               >
-                Roadmap
+                Telegram
               </StyledButton>
               <StyledButton
                 style={{
